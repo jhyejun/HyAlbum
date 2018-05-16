@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		96EF414448B1B4E319B0DB02 /* Pods_HyAlbum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10B1A432D9322C19CA0A7A14 /* Pods_HyAlbum.framework */; };
 		CB4C232420AA6AB300B429B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C232320AA6AB300B429B7 /* AppDelegate.swift */; };
 		CB4C232620AA6AB300B429B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C232520AA6AB300B429B7 /* ViewController.swift */; };
 		CB4C232920AA6AB300B429B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB4C232720AA6AB300B429B7 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10B1A432D9322C19CA0A7A14 /* Pods_HyAlbum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HyAlbum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D5DC5AD0925425A967F2FD4 /* Pods-HyAlbum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HyAlbum.release.xcconfig"; path = "Pods/Target Support Files/Pods-HyAlbum/Pods-HyAlbum.release.xcconfig"; sourceTree = "<group>"; };
 		CB4C232020AA6AB300B429B7 /* HyAlbum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HyAlbum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB4C232320AA6AB300B429B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB4C232520AA6AB300B429B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		CB4C232A20AA6AB400B429B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB4C232D20AA6AB400B429B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB4C232F20AA6AB400B429B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1A36A722E47AF89810EFE61 /* Pods-HyAlbum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HyAlbum.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HyAlbum/Pods-HyAlbum.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96EF414448B1B4E319B0DB02 /* Pods_HyAlbum.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C01383E425E1C96778E2252 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				10B1A432D9322C19CA0A7A14 /* Pods_HyAlbum.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		80F4DE8246D5434EB6788421 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E1A36A722E47AF89810EFE61 /* Pods-HyAlbum.debug.xcconfig */,
+				3D5DC5AD0925425A967F2FD4 /* Pods-HyAlbum.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CB4C231720AA6AB300B429B7 = {
 			isa = PBXGroup;
 			children = (
 				CB4C232220AA6AB300B429B7 /* HyAlbum */,
 				CB4C232120AA6AB300B429B7 /* Products */,
+				80F4DE8246D5434EB6788421 /* Pods */,
+				1C01383E425E1C96778E2252 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,10 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB4C233220AA6AB400B429B7 /* Build configuration list for PBXNativeTarget "HyAlbum" */;
 			buildPhases = (
+				3C858BA1BEEF0F011D6CD462 /* [CP] Check Pods Manifest.lock */,
 				CB4C231C20AA6AB300B429B7 /* Sources */,
 				CB4C231D20AA6AB300B429B7 /* Frameworks */,
 				CB4C231E20AA6AB300B429B7 /* Resources */,
 				CB4C233520AA6B2F00B429B7 /* ShellScript */,
+				8B97CB0ACBC86CE3DA443535 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +158,48 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3C858BA1BEEF0F011D6CD462 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HyAlbum-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B97CB0ACBC86CE3DA443535 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HyAlbum/Pods-HyAlbum-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ImageSlideshow/ImageSlideshow.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImageSlideshow.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HyAlbum/Pods-HyAlbum-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		CB4C233520AA6B2F00B429B7 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -295,16 +363,14 @@
 		};
 		CB4C233320AA6AB400B429B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1A36A722E47AF89810EFE61 /* Pods-HyAlbum.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7XZYKQ99YK;
 				INFOPLIST_FILE = HyAlbum/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jhyejun.HyAlbum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -314,16 +380,14 @@
 		};
 		CB4C233420AA6AB400B429B7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D5DC5AD0925425A967F2FD4 /* Pods-HyAlbum.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7XZYKQ99YK;
 				INFOPLIST_FILE = HyAlbum/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jhyejun.HyAlbum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

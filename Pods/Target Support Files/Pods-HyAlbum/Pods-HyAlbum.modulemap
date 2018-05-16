@@ -1,0 +1,6 @@
+framework module Pods_HyAlbum {
+  umbrella header "Pods-HyAlbum-umbrella.h"
+
+  export *
+  module * { export * }
+}
