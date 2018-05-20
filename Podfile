@@ -8,7 +8,6 @@ target 'HyAlbum' do
   # Pods for HyAlbum
   pod 'Alamofire', :inhibit_warnings => true
   pod 'ObjectMapper', :inhibit_warnings => true
-  pod 'ImageSlideshow', '~> 1.5'
-  pod 'ImageSlideshow/Kingfisher'
+  pod 'Kingfisher'
 
 end

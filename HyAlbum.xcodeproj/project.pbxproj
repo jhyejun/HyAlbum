@@ -13,6 +13,8 @@
 		CB4C232920AA6AB300B429B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB4C232720AA6AB300B429B7 /* Main.storyboard */; };
 		CB4C232B20AA6AB400B429B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB4C232A20AA6AB400B429B7 /* Assets.xcassets */; };
 		CB4C232E20AA6AB400B429B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB4C232C20AA6AB400B429B7 /* LaunchScreen.storyboard */; };
+		CBA5BA4A20AD36F200065CE4 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA5BA4920AD36F200065CE4 /* Feed.swift */; };
+		CBF4D97520AC231A00B6DC51 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF4D97420AC231A00B6DC51 /* API.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		CB4C232A20AA6AB400B429B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB4C232D20AA6AB400B429B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB4C232F20AA6AB400B429B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBA5BA4920AD36F200065CE4 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		CBF4D97420AC231A00B6DC51 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		E1A36A722E47AF89810EFE61 /* Pods-HyAlbum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HyAlbum.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HyAlbum/Pods-HyAlbum.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,6 +83,8 @@
 			isa = PBXGroup;
 			children = (
 				CB4C232320AA6AB300B429B7 /* AppDelegate.swift */,
+				CBF4D97420AC231A00B6DC51 /* API.swift */,
+				CBA5BA4920AD36F200065CE4 /* Feed.swift */,
 				CB4C232520AA6AB300B429B7 /* ViewController.swift */,
 				CB4C232720AA6AB300B429B7 /* Main.storyboard */,
 				CB4C232A20AA6AB400B429B7 /* Assets.xcassets */,
@@ -184,14 +190,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-HyAlbum/Pods-HyAlbum-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/ImageSlideshow/ImageSlideshow.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImageSlideshow.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 			);
@@ -222,6 +226,8 @@
 			files = (
 				CB4C232620AA6AB300B429B7 /* ViewController.swift in Sources */,
 				CB4C232420AA6AB300B429B7 /* AppDelegate.swift in Sources */,
+				CBF4D97520AC231A00B6DC51 /* API.swift in Sources */,
+				CBA5BA4A20AD36F200065CE4 /* Feed.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
